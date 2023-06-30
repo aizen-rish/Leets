@@ -33,12 +33,9 @@ public class AddBinary {
 			char c = add1[x];
 			char d = add2[y];
 
-			if (c == '1' && d == '1') {
+			if (c == d) {
 				answer.append(extraCarry ? '1' : '0');
-				extraCarry = true;
-			} else if (c == '0' && d == '0') {
-				answer.append(extraCarry ? '1' : '0');
-				extraCarry = false;
+				extraCarry = (c == '1');
 			} else {
 				answer.append(extraCarry ? '0' : '1');
 			}
