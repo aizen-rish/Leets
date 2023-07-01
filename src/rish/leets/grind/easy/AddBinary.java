@@ -1,5 +1,5 @@
 
-package rish.leets.grind75;
+package rish.leets.grind.easy;
 
 /*
  * 

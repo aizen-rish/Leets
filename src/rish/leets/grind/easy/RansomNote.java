@@ -1,4 +1,4 @@
-package rish.leets.grind75;
+package rish.leets.grind.easy;
 
 import java.util.List;
 import java.util.stream.Collectors;

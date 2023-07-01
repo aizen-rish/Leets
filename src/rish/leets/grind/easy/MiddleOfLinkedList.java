@@ -1,7 +1,7 @@
-package rish.leets.grind75;
+package rish.leets.grind.easy;
 
 /*
- * Grind 75 : Week 2
+ * Grind 75 : Week 1
  * 
  * Problem #: 876
  * Problem link : https://leetcode.com/problems/middle-of-the-linked-list/
@@ -39,11 +39,10 @@ public class MiddleOfLinkedList {
 			return head;
 		}
 
-		/* 
-		* Use two pointers approach
-		* Pointer i moves one node ahead at a time
-		* Pointer j moves two nodes ahead at a time
-		*/
+		/*
+		 * Use two pointers approach Pointer i moves one node ahead at a time Pointer j
+		 * moves two nodes ahead at a time
+		 */
 		ListNode i = head;
 		ListNode j = head;
 
