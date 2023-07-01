@@ -18,15 +18,13 @@ public class AddBinary {
 		char[] add1 = a.toCharArray();
 		char[] add2 = b.toCharArray();
 
-		StringBuilder answer = new StringBuilder();
-
 		int len1 = add1.length;
 		int len2 = add2.length;
-
-		boolean extraCarry = false;
-
 		int x = len1 - 1;
 		int y = len2 - 1;
+
+		StringBuilder answer = new StringBuilder();
+		boolean extraCarry = false;
 
 		while (x >= 0 && y >= 0) {
 
@@ -44,7 +42,7 @@ public class AddBinary {
 			y--;
 		}
 
-		// Loop thru extra digits
+		// Loop through extra digits
 		if (len1 != len2) {
 			int diff = len1 - len2;
 			extraCarry = diff > 0 ? addRemaining(answer, add1, diff - 1, extraCarry)
@@ -61,13 +59,8 @@ public class AddBinary {
 
 	private static boolean addRemaining(StringBuilder sb, char[] arr, int startIndex, boolean extraCarry) {
 		for (int i = startIndex; i >= 0; i--) {
-			char c = arr[i];
-			if (c == '1') {
-				sb.append(extraCarry ? '0' : '1');
-			} else {
-				sb.append(extraCarry ? '1' : '0');
-				extraCarry = false;
-			}
+			extraCarry = (arr[i] == '1');
+			sb.append(extraCarry ? '0' : '1');
 		}
 		return extraCarry;
 	}
