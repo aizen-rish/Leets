@@ -22,7 +22,7 @@ public class ValidPalindrome {
 			char c = test.charAt(i);
 			if (i < mid) {
 				stack.add(c);
-			} else if (i > mid) {
+			} else if (i > mid || (i == mid && length%2 == 0)) {
 				char d = stack.pop();
 				if (c != d) {
 					return false;
@@ -35,6 +35,7 @@ public class ValidPalindrome {
 
 	public static void main(String[] args) {
 		System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
+		System.out.println(isPalindrome("ab"));
 	}
 
 }
