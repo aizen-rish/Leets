@@ -2,6 +2,15 @@ package rish.leets.grind.easy;
 
 import java.util.Stack;
 
+/*
+ * Grind 75 : Week 1
+ * 
+ * Problem #: 125
+ * Problem link : https://leetcode.com/problems/valid-palindrome/
+ * 
+ * @author Rishabh Soni
+ *
+ */
 public class ValidPalindrome {
 
 	public static boolean isPalindrome(String s) {

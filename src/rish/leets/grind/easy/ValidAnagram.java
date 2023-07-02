@@ -3,6 +3,15 @@ package rish.leets.grind.easy;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * Grind 75 : Week 1
+ * 
+ * Problem #: 242
+ * Problem link : https://leetcode.com/problems/valid-anagram/
+ * 
+ * @author Rishabh Soni
+ *
+ */
 public class ValidAnagram {
 
     public boolean isAnagram(String s, String t) {
