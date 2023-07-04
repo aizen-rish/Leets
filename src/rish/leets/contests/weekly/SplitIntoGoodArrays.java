@@ -9,7 +9,7 @@ package rish.leets.contests.weekly;
  *
  * @author Rishabh Soni
  * 
- * Date Attempted: n/a
+ * Date Attempted: 05/07/2023
  */
 public class SplitIntoGoodArrays {
 
