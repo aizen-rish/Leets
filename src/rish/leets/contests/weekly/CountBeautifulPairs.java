@@ -1,13 +1,16 @@
-package rish.leets.arrays;
+package rish.leets.contests.weekly;
 
 /*
  *   				Weekly Contest 351
- *  
- * Problem link: https://leetcode.com/problems/number-of-beautiful-pairs
  * 
- * Attempt Date: 28/06/2023
+ * Problem #: 2748
+ * Problem link: https://leetcode.com/problems/number-of-beautiful-pairs
+ * Contest link: https://leetcode.com/contest/weekly-contest-351/
+ * 
+ * @author Rishabh Soni
+ * 
+ * Date Attempted: 28/06/2023
  */
-
 public class CountBeautifulPairs {
 
 	public int countBeautifulPairs(int[] nums) {
