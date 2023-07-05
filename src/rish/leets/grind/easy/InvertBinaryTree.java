@@ -11,45 +11,45 @@ package rish.leets.grind.easy;
  */
 public class InvertBinaryTree {
 
-	class TreeNode {
+  class TreeNode {
 
-		int val;
-		TreeNode left;
-		TreeNode right;
+    int val;
+    TreeNode left;
+    TreeNode right;
 
-		TreeNode() {
-		}
+    TreeNode() {
+    }
 
-		TreeNode(int val) {
-			this.val = val;
-		}
+    TreeNode(int val) {
+      this.val = val;
+    }
 
-		TreeNode(int val, TreeNode left, TreeNode right) {
-			this.val = val;
-			this.left = left;
-			this.right = right;
-		}
-	}
+    TreeNode(int val, TreeNode left, TreeNode right) {
+      this.val = val;
+      this.left = left;
+      this.right = right;
+    }
+  }
 
-	public TreeNode invertTree(TreeNode root) {
+  public TreeNode invertTree(TreeNode root) {
 
-		if (root == null) {
-			return null;
-		}
+    if (root == null) {
+      return null;
+    }
 
-		if (root.left != null) {
-			invertTree(root.left);
-		}
+    if (root.left != null) {
+      invertTree(root.left);
+    }
 
-		if (root.right != null) {
-			invertTree(root.right);
-		}
+    if (root.right != null) {
+      invertTree(root.right);
+    }
 
-		TreeNode temp = root.right;
-		root.right = root.left;
-		root.left = temp;
+    TreeNode temp = root.right;
+    root.right = root.left;
+    root.left = temp;
 
-		return root;
-	}
+    return root;
+  }
 
 }
