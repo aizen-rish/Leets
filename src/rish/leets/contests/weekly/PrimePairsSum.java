@@ -15,46 +15,45 @@ import java.util.List;
  */
 public class PrimePairsSum {
 
-	public static List<List<Integer>> findPrimePairs(int n) {
+    public static List<List<Integer>> findPrimePairs(int n) {
 
-		if (n < 4) {
-			return Collections.emptyList();
-		}
+        if (n < 4) {
+            return Collections.emptyList();
+        }
 
-		List<List<Integer>> answer = new ArrayList<>();
+        List<List<Integer>> answer = new ArrayList<>();
 
-		for (int i = 2; i <= n / 2; i++) {
-			int j = n - i;
-			if (isPrime(i) && isPrime(j)) {
-				answer.add(Arrays.asList(i, j));
-			}
-		}
+        for (int i = 2; i <= n / 2; i++) {
+            int j = n - i;
+            if (isPrime(i) && isPrime(j)) {
+                answer.add(Arrays.asList(i, j));
+            }
+        }
 
-		return answer;
-	}
+        return answer;
+    }
 
-	private static boolean isPrime(int i) {
+    private static boolean isPrime(int i) {
 
-		if (i == 2 || i == 3) {
-			return true;
-		}
+        if (i == 2 || i == 3) {
+            return true;
+        }
 
-		if (i % 2 == 0 || i % 3 == 0) {
-			return false;
-		}
+        if (i % 2 == 0 || i % 3 == 0) {
+            return false;
+        }
 
-		for (int j = 5; j * j <= i; j = j + 6) {
-			if (i % j == 0 || i % (j + 2) == 0) {
-				return false;
-			}
-		}
+        for (int j = 5; j * j <= i; j = j + 6) {
+            if (i % j == 0 || i % (j + 2) == 0) {
+                return false;
+            }
+        }
 
-		return true;
-	}
+        return true;
+    }
 
-	public static void main(String[] args) {
-
-		System.out.println(findPrimePairs(1000000));
-	}
+    public static void main(String[] args) {
+        System.out.println(findPrimePairs(1000000));
+    }
 
 }
