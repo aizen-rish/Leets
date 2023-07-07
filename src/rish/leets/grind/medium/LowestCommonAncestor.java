@@ -11,32 +11,32 @@ package rish.leets.grind.medium;
  */
 public class LowestCommonAncestor {
 
-  class TreeNode {
+    class TreeNode {
 
-    int val;
-    TreeNode left;
-    TreeNode right;
+        int val;
+        TreeNode left;
+        TreeNode right;
 
-    TreeNode() {
+        TreeNode() {
+        }
+
+        TreeNode(int x) {
+            this.val = x;
+        }
+
     }
 
-    TreeNode(int x) {
-      this.val = x;
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+
+        if (p.val < root.val && q.val < root.val) {
+            return lowestCommonAncestor(root.left, p, q);
+        }
+
+        if (p.val > root.val && q.val > root.val) {
+            return lowestCommonAncestor(root.right, p, q);
+        }
+
+        return root;
     }
-
-  }
-
-  public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-
-    if (p.val < root.val && q.val < root.val) {
-      return lowestCommonAncestor(root.left, p, q);
-    }
-
-    if (p.val > root.val && q.val > root.val) {
-      return lowestCommonAncestor(root.right, p, q);
-    }
-
-    return root;
-  }
 
 }
