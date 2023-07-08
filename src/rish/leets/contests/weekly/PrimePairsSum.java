@@ -12,6 +12,9 @@ import java.util.List;
  * Problem link: https://leetcode.com/problems/prime-pairs-with-target-sum/
  * 
  * Attempt Date: 04/07/2023
+ * 
+ * @author: Rishabh Soni
+ *  
  */
 public class PrimePairsSum {
 

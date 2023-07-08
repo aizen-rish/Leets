@@ -7,6 +7,9 @@ package rish.leets.contests.weekly;
  * Problem link: https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/
  * 
  * Attempt Date: 04/07/2023
+ * 
+ * @author: Rishabh Soni
+ * 
  */
 public class EvenOddSubArrays {
 
