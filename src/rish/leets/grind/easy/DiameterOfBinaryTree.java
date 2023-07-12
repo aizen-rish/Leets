@@ -6,6 +6,8 @@ package rish.leets.grind.easy;
  * Problem #: 543
  * Problem link : https://leetcode.com/problems/diameter-of-binary-tree/
  * 
+ * Date Attempted: 13/07/2023
+ * 
  * @author Rishabh Soni
  *
  */
