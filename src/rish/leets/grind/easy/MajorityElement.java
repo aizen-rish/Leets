@@ -6,6 +6,8 @@ package rish.leets.grind.easy;
  * Problem #: 169
  * Problem link : https://leetcode.com/problems/majority-element/
  * 
+ * Date Attempted: 05/07/2023
+ * 
  * @author Rishabh Soni
  *
  */

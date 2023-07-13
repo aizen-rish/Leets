@@ -6,6 +6,8 @@ package rish.leets.grind.easy;
  * Problem #: 876
  * Problem link : https://leetcode.com/problems/middle-of-the-linked-list/
  * 
+ * Date Attempted: 01/07/2023
+ * 
  * @author Rishabh Soni
  *
  */

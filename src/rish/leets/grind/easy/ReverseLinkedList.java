@@ -6,6 +6,8 @@ package rish.leets.grind.easy;
  * Problem #: 206
  * Problem link : https://leetcode.com/problems/reverse-linked-list/
  * 
+ * Date Attempted: 05/07/2023
+ * 
  * @author Rishabh Soni
  *
  */
