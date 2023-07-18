@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 /*
- * 				Weekly Contest 352
+ *        Weekly Contest 352
  * 
  * Problem #: 2761
  * Problem link: https://leetcode.com/problems/prime-pairs-with-target-sum/

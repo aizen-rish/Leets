@@ -1,7 +1,7 @@
 package rish.leets.contests.weekly;
 
 /*
- * 				Weekly Contest 352
+ *        Weekly Contest 352
  * 
  * Problem #: 2760
  * Problem link: https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/
@@ -25,14 +25,12 @@ public class EvenOddSubArrays {
             int a = nums[i];
 
             if (a > threshold) {
-                System.out.println("exit 1");
                 isNextOdd = false;
                 curCount = 0;
                 continue;
             }
 
             if (isNextOdd && a % 2 == 0) {
-                System.out.println("exit 2");
                 isNextOdd = false;
                 curCount = 0;
                 i--;
@@ -40,7 +38,6 @@ public class EvenOddSubArrays {
             }
 
             if (!isNextOdd && a % 2 != 0) {
-                System.out.println("exit 3");
                 isNextOdd = false;
                 curCount = 0;
                 continue;

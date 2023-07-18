@@ -37,6 +37,7 @@ public class ImbalanceNumbers {
                     if (set.contains(x - 1)) {
                         segments--;
                     }
+
                     if (set.contains(x + 1)) {
                         segments--;
                     }
