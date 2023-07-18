@@ -6,58 +6,62 @@ package rish.leets.grind.easy;
  * Problem #: 876
  * Problem link : https://leetcode.com/problems/middle-of-the-linked-list/
  * 
+ * Date Attempted: 01/07/2023
+ * 
  * @author Rishabh Soni
  *
  */
 public class MiddleOfLinkedList {
 
-	/*
-	 * Definition for singly-linked list.
-	 */
-	class ListNode {
+    /*
+     * Definition for singly-linked list.
+     */
+    class ListNode {
 
-		int val;
-		ListNode next;
+        int val;
+        ListNode next;
 
-		ListNode() {
-		}
+        ListNode() {
+        }
 
-		ListNode(int val) {
-			this.val = val;
-		}
+        ListNode(int val) {
+            this.val = val;
+        }
 
-		ListNode(int val, ListNode next) {
-			this.val = val;
-			this.next = next;
-		}
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
 
-	}
+    }
 
-	public ListNode middleNode(ListNode head) {
+    public ListNode middleNode(ListNode head) {
 
-		if (head.next == null) {
-			return head;
-		}
+        if (head.next == null) {
+            return head;
+        }
 
-		/*
-		 * Use two pointers approach Pointer i moves one node ahead at a time Pointer j
-		 * moves two nodes ahead at a time
-		 */
-		ListNode i = head;
-		ListNode j = head;
+        /*
+         * Use two pointers approach Pointer i moves one node ahead at a time Pointer j
+         * moves two nodes ahead at a time
+         */
+        ListNode i = head;
+        ListNode j = head;
 
-		do {
-			if (j.next == null) {
-				return i;
-			}
-			if (j.next.next == null) {
-				return i.next;
-			}
-			i = i.next;
-			j = j.next.next;
-		} while (i != null && j != null);
+        do {
 
-		return head;
-	}
+            if (j.next == null) {
+                return i;
+            }
+
+            if (j.next.next == null) {
+                return i.next;
+            }
+            i = i.next;
+            j = j.next.next;
+        } while (i != null && j != null);
+
+        return head;
+    }
 
 }
