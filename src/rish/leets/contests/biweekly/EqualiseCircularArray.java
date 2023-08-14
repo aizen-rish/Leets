@@ -1,4 +1,4 @@
-package rish.leets.grind.medium;
+package rish.leets.contests.biweekly;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -9,7 +9,7 @@ import java.util.Map;
 /*
  *        BiWeekly Contest 110
  * 
- * Problem #: 2787
+ * Problem #: 2808
  * Contest link: https://leetcode.com/contest/biweekly-contest-110/
  * Problem link: https://leetcode.com/problems/minimum-seconds-to-equalize-a-circular-array
  * 
