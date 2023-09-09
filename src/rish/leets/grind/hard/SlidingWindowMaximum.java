@@ -1,4 +1,4 @@
-package rish.leets.grind.medium;
+package rish.leets.grind.hard;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
