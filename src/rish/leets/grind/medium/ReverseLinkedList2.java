@@ -4,7 +4,7 @@ package rish.leets.grind.medium;
  * Daily Challenge!
  * 
  * Problem #: LC92
- * Problem link: https://leetcode.com/problems/split-linked-list-in-parts/
+ * Problem link: https://leetcode.com/problems/reverse-linked-list-ii/
  * 
  * Date Attempted: 07/09/2023
  * 
