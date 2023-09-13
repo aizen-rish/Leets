@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Problem #: LC2141
  * Problem link: https://leetcode.com/problems/maximum-running-time-of-n-computers/
  * 
- * Date Attempted: 27/09/2023
+ * Date Attempted: 27/07/2023
  * 
  * @author Rishabh Soni
  *
