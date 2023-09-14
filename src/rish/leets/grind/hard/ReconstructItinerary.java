@@ -19,7 +19,7 @@ import java.util.PriorityQueue;
  * @author Rishabh Soni
  *
  */
-public class ProductItinerary {
+public class ReconstructItinerary {
 
     Map<String, PriorityQueue<String>> graph = new HashMap<>();
 
@@ -51,7 +51,7 @@ public class ProductItinerary {
 
     public static void main(String[] args) {
 
-        ProductItinerary sol = new ProductItinerary();
+        ReconstructItinerary sol = new ReconstructItinerary();
 
         List<List<String>> tickets = new ArrayList<>();
         tickets.add(Arrays.asList("JFK", "NRT"));
