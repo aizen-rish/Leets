@@ -8,7 +8,7 @@ import java.util.Map;
 /*
  * Daily Challenge!
  * 
- * Problem #: LC1356
+ * Problem #: LC1220
  * Problem link: https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/
  * 
  * Date Attempted: 30/10/2023
