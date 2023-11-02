@@ -1,10 +1,12 @@
 package rish.leets.grind.medium;
 
-/*
+/**
  * Daily Challenge!
  * 
  * Problem #: LC2433
- * Problem link: https://leetcode.com/problems/find-the-original-array-of-prefix-xor/
+ * 
+ * Problem link:
+ * https://leetcode.com/problems/find-the-original-array-of-prefix-xor/
  * 
  * Date Attempted: 31/10/2023
  * 

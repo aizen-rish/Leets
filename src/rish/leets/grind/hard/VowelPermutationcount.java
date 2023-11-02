@@ -5,11 +5,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/*
+/**
  * Daily Challenge!
  * 
  * Problem #: LC1220
- * Problem link: https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/
+ * 
+ * Problem link:
+ * https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/
  * 
  * Date Attempted: 28/10/2023
  * 

@@ -2,11 +2,13 @@ package rish.leets.grind.easy;
 
 import java.util.Arrays;
 
-/*
+/**
  * Daily Challenge!
  * 
  * Problem #: LC1356
- * Problem link: https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/
+ * 
+ * Problem link:
+ * https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/
  * 
  * Date Attempted: 30/10/2023
  * 

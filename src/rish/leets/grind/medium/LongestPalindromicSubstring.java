@@ -1,10 +1,12 @@
 package rish.leets.grind.medium;
 
-/*
+/**
  * Daily Challenge!
  * 
  * Problem #: LC5
- * Problem link: https://leetcode.com/problems/longest-palindromic-substring/description/
+ * 
+ * Problem link:
+ * https://leetcode.com/problems/longest-palindromic-substring/description/
  * 
  * Date Attempted: 27/10/2023
  * 

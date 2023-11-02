@@ -8,10 +8,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 
-/*
+/**
  * Daily Challenge!
  * 
  * Problem #: LC2050
+ * 
  * Problem link: https://leetcode.com/problems/parallel-courses-iii/
  * 
  * Date Attempted: 18/10/2023

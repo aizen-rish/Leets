@@ -1,9 +1,10 @@
 package rish.leets.grind.easy;
 
-/*
+/**
  * Daily Challenge!
  * 
  * Problem #: LC844
+ * 
  * Problem link: https://leetcode.com/problems/backspace-string-compare/
  * 
  * Date Attempted: 19/10/2023
