@@ -1,10 +1,14 @@
 package rish.leets.grind.medium;
 
-/*
+import rish.leets.grind.common.utils.TreeNode;
+
+/**
  * Grind 75 : Week 4
  * 
- * Problem #: 236
- * Problem link : https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+ * Problem #: LC236
+ * 
+ * Problem link :
+ * https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
  * 
  * Date Attempted: 25/07/2023
  * 
@@ -12,21 +16,6 @@ package rish.leets.grind.medium;
  *
  */
 public class LowestCommonAncestorOfBST {
-
-    class TreeNode {
-
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int x) {
-            this.val = x;
-        }
-
-    }
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         return lca(root, p.val, q.val);

@@ -1,9 +1,12 @@
 package rish.leets.grind.easy;
 
-/*
+import rish.leets.grind.common.utils.TreeNode;
+
+/**
  * Grind 75 : Week 2
  * 
- * Problem #: 226
+ * Problem #: LC226
+ * 
  * Problem link : https://leetcode.com/problems/invert-binary-tree/
  * 
  * Date Attempted: 04/07/2023
@@ -12,26 +15,6 @@ package rish.leets.grind.easy;
  *
  */
 public class InvertBinaryTree {
-
-    class TreeNode {
-
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     public TreeNode invertTree(TreeNode root) {
 

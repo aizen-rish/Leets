@@ -1,9 +1,12 @@
 package rish.leets.grind.medium;
 
-/*
+import rish.leets.grind.common.utils.TreeNode;
+
+/**
  * Grind 75 : Week 4
  * 
- * Problem #: 98
+ * Problem #: LC98
+ * 
  * Problem link : https://leetcode.com/problems/validate-binary-search-tree/
  * 
  * Date Attempted: 25/07/2023
@@ -12,21 +15,6 @@ package rish.leets.grind.medium;
  *
  */
 public class ValidateBST {
-
-    class TreeNode {
-
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int x) {
-            this.val = x;
-        }
-
-    }
 
     public boolean isValidBST(TreeNode root) {
         return isValidBST(root, null, null);
