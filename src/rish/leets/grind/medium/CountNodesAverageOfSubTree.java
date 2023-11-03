@@ -2,6 +2,19 @@ package rish.leets.grind.medium;
 
 import rish.leets.grind.common.utils.TreeNode;
 
+/**
+ * Daily Challenge!
+ * 
+ * Problem #: LC2265
+ * 
+ * Problem link:
+ * https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/
+ * 
+ * Date Attempted: 02/11/2023
+ * 
+ * @author Rishabh Soni
+ *
+ */
 public class CountNodesAverageOfSubTree {
 
     class Node {
