@@ -1,10 +1,14 @@
 package rish.leets.grind.medium;
 
-/*
+import rish.leets.grind.common.utils.TreeNode;
+
+/**
  * Grind 75 : Week 2
  * 
- * Problem #: 235
- * Problem link : https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+ * Problem #: LC235
+ * 
+ * Problem link :
+ * https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
  * 
  * Date Attempted: 05/07/2023
  * 
@@ -12,21 +16,6 @@ package rish.leets.grind.medium;
  *
  */
 public class LowestCommonAncestor {
-
-    class TreeNode {
-
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int x) {
-            this.val = x;
-        }
-
-    }
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 

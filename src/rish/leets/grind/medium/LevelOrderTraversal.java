@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import rish.leets.grind.common.utils.TreeNode;
+
 /*
  * Grind 75 : Week 3
  * 
- * Problem #: 102
+ * Problem #: LC102
+ * 
  * Problem link : https://leetcode.com/problems/binary-tree-level-order-traversal/
  * 
  * Date Attempted: 18/07/2023
@@ -16,26 +19,6 @@ import java.util.List;
  *
  */
 public class LevelOrderTraversal {
-
-    class TreeNode {
-
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     public List<List<Integer>> levelOrder(TreeNode root) {
 
