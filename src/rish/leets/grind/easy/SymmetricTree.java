@@ -1,5 +1,7 @@
 package rish.leets.grind.easy;
 
+import rish.leets.grind.common.utils.TreeNode;
+
 /**
  * Practice Prep - 150
  * 
