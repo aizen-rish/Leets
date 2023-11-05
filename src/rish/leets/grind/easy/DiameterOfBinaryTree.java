@@ -1,9 +1,12 @@
 package rish.leets.grind.easy;
 
-/*
+import rish.leets.grind.common.utils.TreeNode;
+
+/**
  * Grind 75 : Week 2
  * 
- * Problem #: 543
+ * Problem #: LC543
+ * 
  * Problem link : https://leetcode.com/problems/diameter-of-binary-tree/
  * 
  * Date Attempted: 13/07/2023
@@ -12,26 +15,6 @@ package rish.leets.grind.easy;
  *
  */
 public class DiameterOfBinaryTree {
-
-    class TreeNode {
-
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     public int diameterOfBinaryTree(TreeNode node) {
 

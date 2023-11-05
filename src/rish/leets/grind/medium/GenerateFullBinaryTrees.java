@@ -6,10 +6,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/*
+import rish.leets.grind.common.utils.TreeNode;
+
+/**
  * Daily Challenge!
  * 
- * Problem #: 894
+ * Problem #: LC894
+ * 
  * Problem link: https://leetcode.com/problems/all-possible-full-binary-trees/
  * 
  * Date Attempted: 23/07/2023
@@ -18,27 +21,6 @@ import java.util.Map;
  *
  */
 public class GenerateFullBinaryTrees {
-
-    class TreeNode {
-
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-
-    }
 
     private Map<Integer, List<TreeNode>> dp = new HashMap<>();
 
