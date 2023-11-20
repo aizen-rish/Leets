@@ -19,30 +19,34 @@ public class GarbageCollection {
 
         int len = garbage.length;
 
-        int gTime = 0;
-        int mTime = 0;
-        int pTime = 0;
+        boolean foundP = false;
+        boolean foundM = false;
+        boolean foundG = false;
+
+        int ans = 0;
 
         for (int i = len - 1; i >= 0; i--) {
 
-            for (char c : garbage[i].toCharArray()) {
-                if (c == 'M') {
-                    mTime++;
-                } else if (c == 'P') {
-                    pTime++;
-                } else {
-                    gTime++;
-                }
+            ans += garbage[i].length();
+
+            foundP |= garbage[i].contains("P");
+            foundG |= garbage[i].contains("G");
+            foundM |= garbage[i].contains("M");
+
+            if (foundP && i > 0) {
+                ans += travel[i - 1];
             }
 
-            if (i > 0) {
-                gTime += gTime > 0 ? travel[i - 1] : 0;
-                mTime += mTime > 0 ? travel[i - 1] : 0;
-                pTime += pTime > 0 ? travel[i - 1] : 0;
+            if (foundM && i > 0) {
+                ans += travel[i - 1];
+            }
+
+            if (foundG && i > 0) {
+                ans += travel[i - 1];
             }
         }
 
-        return gTime + mTime + pTime;
+        return ans;
     }
 
 }
