@@ -2,7 +2,9 @@ package rish.leets.grind.medium;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * Daily Challenge!
@@ -48,6 +50,57 @@ public class DiagonalTraverse2 {
         });
 
         return ans.stream().mapToInt(i -> i.val).toArray();
+    }
+
+    /*
+     * Alternative approach : Using BFS
+     */
+
+    class Pair {
+        int i;
+        int j;
+
+        public Pair(int i, int j) {
+            this.i = i;
+            this.j = j;
+        }
+    }
+
+    public int[] findDiagonalOrder2(List<List<Integer>> nums) {
+
+        Queue<Pair> q = new LinkedList<>();
+        q.add(new Pair(0, 0));
+
+        List<Integer> ans = new ArrayList<>();
+
+        while (!q.isEmpty()) {
+
+            Pair node = q.remove();
+            int i = node.i;
+            int j = node.j;
+
+            List<Integer> curr = nums.get(i);
+            ans.add(curr.get(j));
+
+            q.addAll(getNext(i, j, nums.size(), curr.size()));
+        }
+
+        return ans.stream().mapToInt(i -> i).toArray();
+    }
+
+    private List<Pair> getNext(int i, int j, int m, int n) {
+
+        List<Pair> next = new ArrayList<>();
+
+        if (i + 1 < m && j == 0) {
+            next.add(new Pair(i + 1, j));
+        }
+
+        if (j + 1 < n) {
+            next.add(new Pair(i, j + 1));
+        }
+
+        return next;
     }
 
 }
