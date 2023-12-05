@@ -35,7 +35,7 @@ class MyStack {
         return popped;
     }
 
-    private int getLastElement() {
+    protected int getLastElement() {
 
         while (q1.size() > 1) {
             q2.add(q1.poll());
@@ -54,7 +54,7 @@ class MyStack {
         return getLastElement2();
     }
 
-    private int getLastElement2() {
+    protected int getLastElement2() {
 
         int last = 0;
         Iterator<Integer> it = q1.iterator();
